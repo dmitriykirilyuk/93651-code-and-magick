@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitriy Kirilyuk](https://up.htmlacademy.ru/javascript/8/user/93651).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Быков`.
 
 ---
 
