@@ -28,20 +28,20 @@ window.renderStatistics = function (ctx, names, times) {
   for (var i = 0; i < times.length; i++) {
     var name = names[i];
     var time = times[i];
-
+    var textCoordinatesX = histoX + columnIndent * i;
     var height = step * time;
 
-    ctx.fillText(time.toFixed(0), histoX + columnIndent * i, 90);
+    ctx.fillText(time.toFixed(0), textCoordinatesX, 90);
 
     if (name === "Вы!") {
       ctx.fillStyle = "rgba(255, 0, 0, 1)";
     } else {
       ctx.fillStyle = ["rgba(21, 96, 189, ",(Math.random()).toFixed(1),")"].join("");
     };
-    ctx.fillRect (histoX + columnIndent * i, 100, 40, height);
+    ctx.fillRect (textCoordinatesX, 100, 40, height);
 
     ctx.fillStyle ="purple";
-    ctx.fillText(name, histoX + columnIndent * i, 100 + histoHeight + 20);
+    ctx.fillText(name, textCoordinatesX, 100 + histoHeight + 20);
   };
 };
 
