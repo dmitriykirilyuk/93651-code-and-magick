@@ -29,7 +29,9 @@ var fireballWrapColors = [
   "#e848d5",
   "#e6e848"
 ];
-
+var getMathRandom = function (length) {
+  return Math.floor(Math.random() * length);
+};
 setupOpen.addEventListener("click", function() {
   setupWindow.classList.remove("invisible");
 });
@@ -39,19 +41,16 @@ setupClose.addEventListener("click", function() {
 });
 
 wizardCoat.addEventListener("click", function() {
-  wizardCoat.style.fill = wizardCoatColors[
-    Math.floor(Math.random() * wizardCoatColors.length)
-  ];
+  var color = getMathRandom(wizardCoatColors.length);
+  wizardCoat.style.fill = wizardCoatColors[color];
 });
 
 wizardEyes.addEventListener("click", function() {
-  wizardEyes.style.fill = wizardEyesColors[
-    Math.floor(Math.random() * wizardEyesColors.length) /*почему хдесь не нужно ставить ";" ?*/
-  ];
+  var color = getMathRandom(wizardEyesColors.length);
+  wizardEyes.style.fill = wizardEyesColors[color];
 });
 
 fireballWrap.addEventListener("click", function() {
-  fireballWrap.style.background = fireballWrapColors[
-    Math.floor(Math.random() * fireballWrapColors.length)
-  ];
+  var color = getMathRandom(fireballWrapColors.length);
+  fireballWrap.style.background = fireballWrapColors[color];
 });
