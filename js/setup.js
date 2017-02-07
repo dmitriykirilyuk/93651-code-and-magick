@@ -42,16 +42,16 @@ setupClose.addEventListener('click', function () {
 });
 
 wizardCoat.addEventListener('click', function () {
-  var color = getMathRandom(wizardCoatColors.length);
-  wizardCoat.style.fill = wizardCoatColors[color];
+  var colorIndex = getMathRandom(wizardCoatColors.length);
+  wizardCoat.style.fill = wizardCoatColors[colorIndex];
 });
 
 wizardEyes.addEventListener('click', function () {
-  var color = getMathRandom(wizardEyesColors.length);
-  wizardEyes.style.fill = wizardEyesColors[color];
+  var colorIndex = getMathRandom(wizardEyesColors.length);
+  wizardEyes.style.fill = wizardEyesColors[colorIndex];
 });
 
 fireballWrap.addEventListener('click', function () {
-  var color = getMathRandom(fireballWrapColors.length);
-  fireballWrap.style.background = fireballWrapColors[color];
+  var colorIndex = getMathRandom(fireballWrapColors.length);
+  fireballWrap.style.background = fireballWrapColors[colorIndex];
 });
